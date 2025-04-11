@@ -21,13 +21,5 @@ public class HomeController {
         return "¡Hola CI/CD con Jenkins y Git Hooks! Bienvenido al homepage de MultiJuegos. "
                 + "Este sitio ha sido visitado " + visitCount + " veces.";
 
-        // Mensaje HTML con estilo: cambiamos el tamaño de la fuente y el color
-        return "<html>" +
-               "<body>" +
-               "<h1 style='font-size: 30px; color: #4CAF50;'>¡Hola CI/CD con Jenkins y Git Hooks!</h1>" +
-               "<p style='font-size: 20px; color: #0000FF;'>Bienvenido al homepage de MultiJuegos. " +
-               "Este sitio ha sido visitado " + visitCount + " veces.</p>" +
-               "</body>" +
-               "</html>";
     }
 }
