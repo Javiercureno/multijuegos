@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        REMOTE_HOST = "ec2-user@44.212.74.110"
+        REMOTE_HOST = "ec2-user@18.208.170.32"
         PEM_PATH = "/.ssh-keys/docker-vm2-key.pem"
         REPO_URL = "https://github.com/Javiercureno/multijuegos"
         REPOS_DIR = "/home/ec2-user/github-repos"
