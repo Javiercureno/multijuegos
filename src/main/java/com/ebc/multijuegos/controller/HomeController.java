@@ -19,7 +19,7 @@ public class HomeController {
         lastVisit = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-        return "¡Hola CI/CD con Jenkins y Git Hooks! Bienvenido al homepage de MultiJuegos. "
+        return "¡Hola CI/CD con Jenkins y Git Hooks! Bienvenido :) al homepage de MultiJuegos. "
                 + "Este sitio ha sido visitado " + visitCount + " veces.\n"
                 + "Última visita: " + lastVisit.format(formatter);
     }
