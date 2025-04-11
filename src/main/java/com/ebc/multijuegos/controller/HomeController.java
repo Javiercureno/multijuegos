@@ -3,6 +3,7 @@ package com.ebc.multijuegos.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.Scanner;
 
 @RestController
@@ -17,9 +18,9 @@ public class HomeController {
     public String home() {
         // Incrementa el contador de visitas
         visitCount++;
-        
-        // Mensaje de bienvenida con el número de visitas
-        return "¡Hola CI/CD con Jenkins y Git Hooks! Bienvenido al homepage de MultiJuegos. "
+
+        // Variable para almacenar el mensaje
+        String welcomeMessage = "¡Hola CI/CD con Jenkins y Git Hooks! Bienvenido al homepage de MultiJuegos. "
                 + "Este sitio ha sido visitado " + visitCount + " veces.";
 
         // Ahora se calcula el área del círculo
@@ -32,6 +33,5 @@ public class HomeController {
         welcomeMessage += "\nEl área del círculo es: " + area;
 
         return welcomeMessage;
-
     }
 }
