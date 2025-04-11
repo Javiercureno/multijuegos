@@ -14,6 +14,14 @@ public class HomeController {
     // Método para manejar las peticiones GET a la raíz
     @GetMapping
     public String home() {
+          return """
+        <html>
+            <body>
+                <h1 style="font-size: 48px; color: red;">¡Hola mundo!</h1>
+                <p style="font-size: 32px; color: blue;">CI/CD Listo... Jenkins lee hooks - TEST 06 !!!</p>
+            </body>
+        </html>
+        """;
         // Incrementa el contador de visitas
         visitCount++;
         
