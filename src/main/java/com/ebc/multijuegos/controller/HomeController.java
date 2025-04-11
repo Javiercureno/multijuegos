@@ -4,8 +4,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Scanner;
-
 @RestController
 @RequestMapping("/") // Define la raíz como ruta base
 public class HomeController {
@@ -18,20 +16,10 @@ public class HomeController {
     public String home() {
         // Incrementa el contador de visitas
         visitCount++;
-
-        // Variable para almacenar el mensaje
-        String welcomeMessage = "¡Hola CI/CD con Jenkins y Git Hooks! Bienvenido al homepage de MultiJuegos. "
+        
+        // Mensaje de bienvenida con el número de visitas
+        return "¡Hola CI/CD con Jenkins y Git Hooks! Bienvenido al homepage de MultiJuegos. "
                 + "Este sitio ha sido visitado " + visitCount + " veces.";
 
-        // Ahora se calcula el área del círculo
-        Scanner s = new Scanner(System.in);
-        welcomeMessage += "\nIntroduce el radio del círculo:";
-        
-        double r = s.nextDouble();
-        double area = (22 * r * r) / 7;
-
-        welcomeMessage += "\nEl área del círculo es: " + area;
-
-        return welcomeMessage;
     }
 }
